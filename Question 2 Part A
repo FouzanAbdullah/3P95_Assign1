@@ -1,0 +1,57 @@
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <vector>
+
+std::vector<int> generateRandomArray(int size, int minValue, int maxValue) {
+  std::vector<int> arr(size);
+  for (int i = 0; i < size; i++) {
+    arr[i] = minValue + rand() % (maxValue - minValue + 1);
+  }
+  return arr;
+}
+
+void bubbleSort(std::vector<int> &arr) {
+  int n = arr.size();
+  bool swapped;
+
+  do {
+    swapped = false;
+    for (int i = 1; i < n; i++) {
+      if (arr[i - 1] > arr[i]) {
+        std::swap(arr[i - 1], arr[i]);
+        swapped = true;
+      }
+    }
+  } while (swapped);
+}
+
+int main() {
+  srand(time(0)); // Seed the random number generator with current time
+
+  // Generate and test random arrays
+  for (int i = 0; i < 10; i++) { // Generate 10 random test cases
+    int size = rand() % 20 + 1;  // Random array size between 1 and 20
+    std::vector<int> arr =
+        generateRandomArray(size, 1, 100); // Random values between 1 and 100
+
+    // Display the input array
+    std::cout << "Input Array (Size: " << size << "): ";
+    for (int j = 0; j < size; j++) {
+      std::cout << arr[j] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using Bubble Sort
+    bubbleSort(arr);
+
+    // Display the sorted array
+    std::cout << "Sorted Array: ";
+    for (int j = 0; j < size; j++) {
+      std::cout << arr[j] << " ";
+    }
+    std::cout << std::endl;
+  }
+
+  return 0;
+}
