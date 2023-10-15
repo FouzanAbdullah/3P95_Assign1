@@ -1,0 +1,39 @@
+C) Assess the effectiveness of the test cases from part A by using mutation analysis in conjunction with the mutated codes from part B. Rank the test-cases and explain your answer. 
+
+	Test case 1: Normal case
+  o	Mutation version 1 (Introducing a syntax error): Detects the syntax error introduced by missing a closing quotation mark.
+  o	Mutated version 2 (Changing arithmetic operation): Detects the change in arithmetic operation.
+  o	Mutated version 3 (Changing loop condition): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 4 (Modifying exception handling): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 5 (Altering arithmetic operations): Detects the change in arithmetic operations.
+  o	Mutated version 6 (Exception list handling): Doesn't detect the mutation as it focuses on a different aspect of the code.
+
+	Test case 2: Empty data list
+  o	Mutation version 1 (Introducing a syntax error): Detects the syntax error introduced by missing a closing quotation mark.
+  o	Mutated version 2 (Changing arithmetic operation): Detects the change in arithmetic operation.
+  o	Mutated version 3 (Changing loop condition): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 4 (Modifying exception handling): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 5 (Altering arithmetic operations): Detects the change in arithmetic operations.
+  o	Mutated version 6 (Exception list handling): Doesn't detect the mutation as it focuses on a different aspect of the code.
+
+	Test case 3: Exception case
+  o	Mutated version 1 (Introducing a syntax error): Detects the syntax error introduced by missing a closing quotation mark.
+  o	Mutated version 2 (Changing arithmetic operation): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 3 (Changing loop condition): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 4 (Modifying exception handling): Detects the change in exception handling.
+  o	Mutated version 5 (Altering arithmetic aperations): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 6 (Exception list handling): Doesn't detect the mutation as it focuses on a different aspect of the code.
+
+	Test case 4: Mixed data types
+  o	Mutated version 1 (Introducing a syntax error): Detects the syntax error introduced by missing a closing quotation mark.
+  o	Mutated version 2 (Changing arithmetic operation): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 3 (Changing loop condition): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 4 (Modifying exception handling): Detects the change in exception handling.
+  o	Mutated version 5 (Altering arithmetic operations): Doesn't detect the mutation as it focuses on a different aspect of the code.
+  o	Mutated version 6 (Exception list handling): Doesn't detect the mutation as it focuses on a different aspect of the code.
+
+Ranking:
+  1.	Test Case 1 (Normal case): This test case effectively detected mutations related to syntax errors and changes in arithmetic operations. It ranks highest due to its ability to uncover different types of mutations.
+  2.	Test Case 2 (Empty data list): Like Test Case 1, it effectively detected syntax errors and changes in arithmetic operations, ranking second.
+  3.	Test Case 3 (Mixed data types): This test case detected the syntax error but had limited effectiveness in detecting other mutations, ranking third.
+  4.	Test Case 4 (Exception case): This test case had limited effectiveness in detecting mutations and ranked the lowest.

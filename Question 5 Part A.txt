@@ -1,0 +1,17 @@
+5-	The code snippet below aims to switch uppercase characters to their lowercase counterparts and vice versa. Numeric characters are supposed to remain unchanged. The function contains at least one known bug that results in incorrect output for specific inputs.
+
+def processString(input_str):
+    output_str = ""
+    for char in input_str:
+        if char.isupper():
+            output_str += char.lower()
+        elif char.isnumeric():
+            output_str += char * 2  
+        else:
+            output_str += char.upper()
+
+    return output_str
+
+a.	Identify the bug(s) in the code. You can either manually review the code (a form of static analysis) or run it with diverse input values (a form of manual random testing). If you are unable to pinpoint the bug using these methods, you may utilize a random testing tool or implement random test case generator in code. Provide a detailed explanation of the bug, identify the line of code causing it, and describe your strategy for finding it.
+
+Using static analysis, we can tell that the code has a bug in the way it handles numeric characters. Specifically in line 7, it should keep the character unchanged but instead it doubles it by appending them twice in the output string. To identify this bug, I manually reviewed the code and saw that the condition for handling numeric characters is flawed. It incorrectly multiplies numeric characters by 2, which is not the desired behavior.

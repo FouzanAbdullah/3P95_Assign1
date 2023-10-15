@@ -1,0 +1,28 @@
+D) Discuss how you would use path, branch, and statement static analysis to evaluate/analyse the above code. (4 * 8 = 32 pts)
+
+1.	Static analysis: 
+  i.	Definition: Statement coverage aims to measure the percentage of executable statements that have been executed during testing. It checks if each line of code has been executed at least once.
+  ii.	Evaluation Steps:
+    Create a list of all executable statements within the filterData function.
+    During testing, execute the function with various inputs and track which statements are executed.
+    Calculate the percentage of executed statements relative to the total number of statements.
+
+2.	Branch analysis:
+  i.	Definition: Branch coverage assesses whether every branch or decision point in the code has been tested. It examines both the true and false branches of conditions and loops.
+  ii.	Evaluation Steps:
+    Identify all decision points within the filterData function, including if conditions and loop conditions.
+    Execute the function with test cases that cover all possible branches and evaluate the outcomes.
+    Calculate the percentage of covered branches relative to the total number of branches.
+
+3.	Path analysis:
+  i.	Definition: Path coverage is a more detailed analysis that assesses whether all possible paths through the code have been tested. It involves examining every possible combination of conditions.
+  ii.	Evaluation Steps:
+    Enumerate all the possible paths through the filterData function, considering various condition combinations and loop iterations.
+    Execute the function with test cases that traverse different paths.
+    Calculate the percentage of covered paths relative to the total number of possible paths.
+
+
+Using the Analyses for Evaluation:
+  	Static analysis: This analysis will help assess how well the code has been exercised in terms of individual lines of code. It will reveal if there are statements that have not been executed during testing.
+  	Branch analysis: Branch coverage will uncover whether all possible decision points have been explored. It can highlight whether, for example, both the true and false branches of if conditions have been tested.
+  	Path analysis: Path coverage is the most comprehensive analysis and will expose more subtle issues in the code. It ensures that not only are all branches tested but that different combinations of branches are explored. It can reveal specific paths that may have unintended interactions or overlooked code.

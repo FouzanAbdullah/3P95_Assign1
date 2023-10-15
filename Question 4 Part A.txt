@@ -1,0 +1,37 @@
+4-	A) Develop 4 distinct test cases to test the above code, with code coverage ranging from 30% to 100%. For each test-case calculate and mention its code coverage. 
+
+•	Test case 1: Normal case
+  o	This case will cover the typical scenario with a list of numbers and a limit value.
+  o	Inputs:
+    	data: [1, 2, 3, 4, 5]
+    	limit: 3
+    	exceptions: [3]
+  o	Expected output would be something like: [0.333333…, 0.666666…, 1.0, 6, 10]
+  o	Code coverage: 100%. This test goes through all branches of the code, including both if and else conditions.
+
+•	Test case 2: Empty data list
+  o	This case checks how the function handles an empty ‘data’ list.
+  o	Inputs:
+    	data: [ ]
+    	limit: 5
+    	exceptions: [3, 9]
+  o	Expected output should be: [ ].
+  o	Code coverage: 100%. Even though the data list is empty, the function is still executed, and the loop does not run. 
+
+•	Test case 3: Exception case
+  o	This case focuses on how the function handles items in both the data and the exception list.
+  o	Inputs:
+    	data: [5, 10, 15, 30]
+    	limit: 5
+    	exceptions: [10, 30]
+  o	Expected output would be: [‘5_EXCEPTION’, ‘10_EXCEPTION’]
+  o	Code coverage: 75%. All the if and elif conditions are covered but not the else condition.
+
+•	Test case 4: Mixed data types
+  o	This case includes a mix of data types in the ‘data’ list.
+  o	Inputs:
+    	data: [2, “string”, 3.75, False, [2, 4, 6]]
+    	limit: 2
+    	exceptions: [“string”, [2, 4, 6]]
+  o	Expected output is: [“string_EXCEPTION”, 1.875, 2, [2, 4, 6]]
+  o	Code coverage: 100%. The test case explores various data types and all branches of the code are explored.

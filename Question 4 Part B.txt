@@ -1,0 +1,19 @@
+B) Generate 6 modified (mutated) versions of the above code. 
+
+1.	Mutated version 1 – Syntax error:
+  a.	Remove the closing quotation in line 7.
+
+2.	Mutated version 2 – Changing arithmetic operation:
+  a.	Change multiplication to addition in line 9.
+
+3.	Mutated version 3 – Changing loop condition:
+  a.	Change while index < len(data) to while limit < len(data) in line 4.
+
+4.	Mutated version 4 – Modifying exception handling:
+  a.	Change exception condition in line 6.
+
+5.	Mutation version 5 – Altering arithmetic operation:
+  a.	Change addition to subtraction in line 7 and multiplication to addition in line 9.
+
+6.	Mutation version 6 – Exception list handling:
+  a.	Change exception check from if item “in” to if item “not in” in line 6.
