@@ -1,0 +1,16 @@
+1-	Explain the difference between "sound" and "complete" analysis in software analysis. Then, define what true positive, true negative, false positive, and false negative mean. How would these terms change if the goal of the analysis changes, particularly when "positive" means finding a bug, and then when "positive" means not finding a bug. (10 pts)
+
+•	Sound Analysis: A sound analysis in software analysis refers to an analysis that is accurate and does not produce false results. It ensures that all identified issues or findings are genuine and relevant. Sound analysis minimizes the likelihood of false positives and false negatives.
+•	Complete Analysis: A complete analysis, on the other hand, aims to uncover all possible issues or problems within the software system. A complete analysis may produce a larger set of findings, including true positives, true negatives, false positives, and false negatives, as it covers all aspects of the software.
+
+•	True Positive: In the context where "positive" means finding a bug, a true positive refers to a case where the analysis correctly identifies a bug that does exist in the software. It indicates that the analysis has successfully detected a real problem.
+•	True Negative: In the same context, a true negative occurs when the analysis correctly determines that there is no bug in the software, and this assessment is indeed accurate.
+•	False Positive: In the context where "positive" means finding a bug, a false positive happens when the analysis incorrectly flags something as a bug when there is no bug. It's a false alarm, indicating that the analysis produced an incorrect positive result.
+•	False Negative: Again, in the context where "positive" means finding a bug, a false negative occurs when the analysis fails to detect a bug that exists in the software. It means the analysis missed a genuine problem.
+
+  Now, if we change the goal of the analysis to where "positive" means not finding a bug:
+
+•	True Positive: In this context, a true positive would mean correctly identifying that there is a bug in the software, which is contrary to the goal of not finding a bug.
+•	True Negative: A true negative remains the same; it means correctly determining that there are no bugs in the software.
+•	False Positive: In this scenario, a false positive would indicate incorrectly flagging something as a bug when there isn't one, which aligns with the goal of not finding a bug.
+•	False Negative: A false negative, in this context, would mean failing to detect a bug when there is one, which is contrary to the goal of ensuring a bug-free software.
